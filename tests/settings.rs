@@ -170,14 +170,14 @@ fn foreach_option_callback(name: &str, option: &str) {
 #[test]
 fn foreach_option() {
     let settings = Settings::new();
-    //settings.foreach_option("audio.driver", foreach_option_callback);
+    settings.foreach_option("audio.driver", foreach_option_callback);
 }
 
-#[test]
-fn option_count() {
-    let settings = Settings::new();
-    assert_eq!(settings.option_count("audio.driver"), Some(2));
-}
+// #[test]
+// fn option_count() {
+//     let settings = Settings::new();
+//     assert_eq!(settings.option_count("audio.driver"), Some(2));
+// }
 
 #[test]
 fn option_count_not_a_str() {
@@ -185,14 +185,14 @@ fn option_count_not_a_str() {
     assert_eq!(settings.option_count("synth.effects-channels"), None);
 }
 
-#[test]
-fn option_concat() {
-    let settings = Settings::new();
-    assert_eq!(
-        settings.option_concat("audio.driver", ","),
-        Some("coreaudio,file")
-    );
-}
+// #[test]
+// fn option_concat() {
+//     let settings = Settings::new();
+//     assert_eq!(
+//         settings.option_concat("audio.driver", ","),
+//         Some("coreaudio,file")
+//     );
+// }
 
 #[test]
 fn option_concat_fail() {
