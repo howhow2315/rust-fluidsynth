@@ -22,7 +22,7 @@ git = "https://github.com/scholtzan/rust-fluidsynth"
 
 ## Short example
 
-```Rust
+```rs
 extern crate fluidsynth;
 extern crate rand;
 extern crate time;
