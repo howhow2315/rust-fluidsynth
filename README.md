@@ -1,7 +1,5 @@
 # rust-fluidsynth
 
-[![Build status (master)](https://api.travis-ci.org/scholtzan/rust-fluidsynth.svg?branch=master)](https://travis-ci.org/scholtzan/rust-fluidsynth)
-
 > Note: This project is currently not under active development. Not all functionality to use fluidsynth is available yet. Nevertheless, feel free to fork and and send pull requests with additional functionality or bug fixes.
 
 __FluidSynth__ bindings for Rust.
